@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معلومات التطبيق | تيك توك (TikTok)</title>
+    <meta name="description" content="صفحة تفاصيل ومعلومات تطبيق تيك توك - التنزيل المباشر، لقطات الشاشة، والمواصفات الكاملة." />
+    <link rel="stylesheet" href="/app-info.css" />
+  </head>
+  <body>
+    <!-- الشريط العلوي (Top Bar) -->
+    <header class="top-nav-bar">
+      <div class="nav-start">
+        <button id="menu-btn" class="icon-btn" aria-label="فتح القائمة الجانبية" title="القائمة">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <a href="/index.html" class="nav-brand" title="الرئيسية">
+          <img src="https://i.ibb.co/r2w0hdnY/d3543b479ee91c1d361520c66d224edc.jpg" alt="شعار تطبيق تيك توك" class="nav-logo" style="object-fit: cover; border-radius: 8px;" />
+          <div class="brand-text">
+            <span class="brand-title">تيك توك</span>
+            <span class="brand-subtitle">معلومات التطبيق</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- خانة البحث في الشريط العلوي -->
+      <div class="nav-search-wrapper">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="top-search-input" class="search-input" placeholder="بحث في التطبيق أو الميزات..." />
+        <button id="clear-top-search" class="clear-search-btn" aria-label="مسح البحث" style="display: none;">×</button>
+      </div>
+
+      <div class="nav-end">
+        <a href="/index.html" class="back-home-btn" title="الرجوع للرئيسية">
+          <span>الرئيسية</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- غطاء القائمة الجانبية (Backdrop) -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- القائمة الجانبية (Sidebar Drawer) -->
+    <aside id="side-drawer" class="side-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-brand-center">
+          <img
+            src="https://i.ibb.co/gLhVMMzR/file-0000000064d48210955fbef215fdb487.png"
+            alt="شعار العلامة التجارية"
+            class="drawer-logo"
+          />
+          <div class="drawer-brand-name">متجر علوش</div>
+          <span class="drawer-badge">الإصدار 1.0</span>
+        </div>
+        <button id="close-drawer-btn" class="drawer-close-btn" aria-label="إغلاق القائمة">✕</button>
+      </div>
+
+      <div class="drawer-search-box">
+        <input type="text" id="drawer-search-input" placeholder="ابحث في القائمة..." />
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="/index.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <span class="drawer-item-title">الصفحة الرئيسية</span>
+        </a>
+
+        <a href="/app-info.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <span class="drawer-item-title">متاجر علوش</span>
+        </a>
+
+        <a href="/too-id.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <span class="drawer-item-title">تطبيق TOO ID</span>
+        </a>
+
+        <a href="/chrome.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="21.17" y1="8" x2="12" y2="8"></line>
+              <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+              <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+            </svg>
+          </div>
+          <span class="drawer-item-title">كروم Chrome</span>
+        </a>
+
+        <a href="/whatsapp.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </div>
+          <span class="drawer-item-title">تطبيق واتساب</span>
+        </a>
+
+        <a href="/tiktok.html" class="drawer-item active">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </div>
+          <span class="drawer-item-title">تطبيق تيك توك</span>
+        </a>
+
+        <a href="/instagram.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </div>
+          <span class="drawer-item-title">تطبيق انستقرام</span>
+        </a>
+
+        <a href="/gmail.html" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <span class="drawer-item-title">تطبيق جيميل</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- المحتوى الرئيسي للصفحة (Page Content) -->
+    <main class="page-container">
+      <!-- بطاقة رأس التطبيق الرئيسية -->
+      <section class="app-hero-card">
+        <div class="hero-top-info">
+          <div class="hero-icon-container full-cover">
+            <img src="https://i.ibb.co/r2w0hdnY/d3543b479ee91c1d361520c66d224edc.jpg" alt="شعار تيك توك" class="hero-app-logo" />
+          </div>
+
+          <div class="hero-title-group">
+            <h1 class="hero-app-name">تيك توك (TikTok)</h1>
+            <p class="hero-developer">مطور التطبيق: <span class="highlight">TikTok Pte. Ltd.</span></p>
+            <div class="hero-category-tag">مقاطع الفيديو والترفيه • رسمي</div>
+          </div>
+        </div>
+
+        <!-- إحصائيات سريعة -->
+        <div class="hero-stats-row">
+          <div class="stat-box">
+            <span class="stat-value">★ 4.5</span>
+            <span class="stat-label">180 مليون تقييم</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-value">+1 مليار</span>
+            <span class="stat-label">عمليات التنزيل</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-value">115 MB</span>
+            <span class="stat-label">الحجم</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <span class="stat-value">Android</span>
+            <span class="stat-label">5.0 فما فوق</span>
+          </div>
+        </div>
+
+        <!-- أزرار الإجراءات (تثبيت كامل بدون مشاركة) -->
+        <div class="hero-actions" id="hero-actions-container">
+          <button
+            id="main-install-btn"
+            class="primary-install-btn full-box-btn"
+            data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Tlitok.apk"
+          >
+            <div class="install-btn-content">
+              <svg class="install-icon" id="install-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span id="install-text">تثبيت</span>
+            </div>
+
+            <!-- دائرة التقدم الدائرية على الحواف الدائرية تدور حول نفسها مع خط يمتلئ من 0% إلى 100% -->
+            <div class="circle-progress-wrap" id="circle-progress-wrap" style="display: none;">
+              <svg class="progress-ring-svg" width="36" height="36" viewBox="0 0 36 36">
+                <circle class="progress-ring-bg" stroke="rgba(255, 255, 255, 0.25)" stroke-width="3.5" fill="transparent" r="15" cx="18" cy="18" />
+                <circle
+                  class="progress-ring-circle"
+                  id="progress-circle"
+                  stroke="#ffffff"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                  fill="transparent"
+                  r="15"
+                  cx="18"
+                  cy="18"
+                />
+              </svg>
+              <span class="progress-ring-text" id="progress-percent">0%</span>
+            </div>
+          </button>
+
+          <!-- زرا (فتح) و(إلغاء التثبيت) يظهران بعد اكتمال التثبيت مباشرة -->
+          <div id="installed-actions-group" class="installed-actions-group" style="display: none;">
+            <a
+              id="open-app-btn"
+              class="primary-install-btn open-btn"
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="فتح التطبيق الآن"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>فتح</span>
+            </a>
+
+            <button id="uninstall-btn" class="uninstall-btn" title="إلغاء تثبيت التطبيق">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+              <span>إلغاء التثبيت</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- لقطات الشاشة (العروض) تفتح بسلاسة عبر الضغط عليها -->
+      <section class="edge-screenshots-wrapper">
+        <div class="screenshots-edge-track">
+          <div class="edge-screenshot-item">
+            <img src="https://i.ibb.co/2RwHnN4/600x1300bb-8.webp" alt="لقطة شاشة تيك توك 1" loading="lazy" />
+          </div>
+          <div class="edge-screenshot-item">
+            <img src="https://i.ibb.co/G3fBkZFc/600x1300bb-7.webp" alt="لقطة شاشة تيك توك 2" loading="lazy" />
+          </div>
+          <div class="edge-screenshot-item">
+            <img src="https://i.ibb.co/Kps7sN3y/600x1300bb-6.webp" alt="لقطة شاشة تيك توك 3" loading="lazy" />
+          </div>
+          <div class="edge-screenshot-item">
+            <img src="https://i.ibb.co/MkzMrJ08/600x1300bb-5.webp" alt="لقطة شاشة تيك توك 4" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- زر عودة للمتجر السفلي -->
+      <div class="page-bottom-action">
+        <a href="/index.html" class="return-store-btn">
+          <span>العودة إلى المتجر الرئيسي</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <!-- نافذة عرض لقطات الشاشة بسلاسة (Lightbox Modal) -->
+    <div id="screenshot-modal" class="screenshot-modal" aria-hidden="true">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-content">
+        <button id="close-modal-btn" class="close-modal-btn" aria-label="إغلاق العرض">✕</button>
+        <img id="modal-img" src="" alt="عرض لقطة الشاشة" class="modal-preview-img" />
+      </div>
+    </div>
+
+    <!-- إشعار التثبيت العائم (In-App Toast) -->
+    <div id="app-toast" class="app-toast" role="alert" aria-live="polite">
+      <div class="toast-badge-icon">🎵</div>
+      <div class="toast-content">
+        <strong id="toast-title" class="toast-title">تيك توك</strong>
+        <span id="toast-msg" class="toast-msg">تم بدء التثبيت بنجاح</span>
+      </div>
+    </div>
+
+    <script src="/tiktok.js"></script>
+  </body>
+</html>

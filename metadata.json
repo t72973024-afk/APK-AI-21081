@@ -1,0 +1,6 @@
+{
+  "name": "White Screen",
+  "description": "A completely blank white screen application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

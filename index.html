@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تطبيق الخلفية والتصميم</title>
+    <meta name="description" content="واجهة مقسمة: نصف علوي أسود بحواف دائرية وتأثير ضبابي مع شريط مؤشر ومربعات التطبيقات، ونصف سفلي بلون رصاصي." />
+    <meta property="og:title" content="تطبيق الخلفية والتصميم" />
+    <meta property="og:description" content="واجهة مقسمة: نصف علوي أسود بحواف دائرية وتأثير ضبابي مع شريط مؤشر ومربعات التطبيقات، ونصف سفلي بلون رصاصي." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="top-section">
+      <!-- الشريط العلوي: القائمة الجانبية وبجانبها البحث، وشعار العلامة التجارية في مكان البحث السابق -->
+      <header class="home-top-bar">
+        <div class="top-nav-actions">
+          <button id="menu-btn" class="top-icon-btn" aria-label="فتح القائمة الجانبية" title="القائمة">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <button id="search-btn" class="top-icon-btn" aria-label="بحث عن تطبيق" title="بحث">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="brand-logo-wrapper" title="شعار العلامة التجارية">
+          <img
+            src="https://i.ibb.co/gLhVMMzR/file-0000000064d48210955fbef215fdb487.png"
+            alt="شعار العلامة التجارية"
+            class="brand-trademark-img"
+          />
+        </div>
+      </header>
+
+      <!-- شريط البحث السريع المنسدل -->
+      <div id="quick-search-bar" class="quick-search-bar">
+        <div class="search-input-inner">
+          <svg class="inner-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="home-search-input"
+            class="home-search-input"
+            placeholder="ابحث عن التطبيقات..."
+          />
+          <button id="close-search-btn" class="close-search-btn" aria-label="إغلاق البحث">×</button>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img
+          src="https://i.ibb.co/Qq3ZrNz/file-00000000b96c821098afc9e74ef46301.png"
+          alt="صورة العرض"
+          class="hero-image"
+        />
+        <div class="blur-overlay"></div>
+        <div
+          class="indicator-bar"
+          id="indicator-bar"
+          role="button"
+          aria-label="اسحب للأسفل لفتح صفحة جديدة"
+          title="اسحب للأسفل أو اضغط لفتح صفحة جديدة"
+        ></div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <!-- شبكة التطبيقات 4 في 4 تحت بعضها -->
+      <div class="apps-container">
+        <div class="apps-grid">
+          <!-- الصف الأول (4 تطبيقات) -->
+          <!-- 1. متاجر علوش -->
+          <div class="app-card">
+            <a href="/app-info.html" class="app-icon-box" title="عرض معلومات التطبيق">
+              <img
+                src="https://i.ibb.co/VcnPyP18/1787531207672.png"
+                alt="Aloush Stores"
+                class="app-logo"
+              />
+            </a>
+            <a href="/app-info.html" class="app-name" title="عرض معلومات التطبيق" style="text-decoration: none; color: inherit;">Aloush St...</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/https/aloushstores.apk"
+              data-app-name="متاجر علوش"
+              data-app-id="aloush_stores"
+            >تثبيت</button>
+          </div>
+
+          <!-- 2. TOO ID -->
+          <div class="app-card">
+            <a href="/too-id.html" class="app-icon-box" title="عرض معلومات تطبيق TOO ID">
+              <img
+                src="https://i.ibb.co/fz7WsBjK/1790363095663.png"
+                alt="TOO ID"
+                class="app-logo"
+              />
+            </a>
+            <a href="/too-id.html" class="app-name" title="عرض معلومات تطبيق TOO ID" style="text-decoration: none; color: inherit;">TOO ID</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/too.id.apk"
+              data-app-name="TOO ID"
+              data-app-id="too_id"
+            >تثبيت</button>
+          </div>
+
+          <!-- 3. كروم Chrome -->
+          <div class="app-card">
+            <a href="/chrome.html" class="app-icon-box full-cover" title="عرض معلومات متصفح كروم Chrome">
+              <img
+                src="https://i.ibb.co/whvrKcsg/ec1e93df87bb422791a8c303ed910821.jpg"
+                alt="كروم Chrome"
+                class="app-logo"
+              />
+            </a>
+            <a href="/chrome.html" class="app-name" title="عرض معلومات متصفح كروم Chrome" style="text-decoration: none; color: inherit;">كروم Chrome</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Google-browser.apk"
+              data-app-name="كروم Chrome"
+              data-app-id="chrome"
+            >تثبيت</button>
+          </div>
+
+          <!-- 4. واتساب (WhatsApp) -->
+          <div class="app-card">
+            <a href="/whatsapp.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق واتساب">
+              <img
+                src="https://i.ibb.co/d1RYMvh/6acfb110fe709e6e9f4c6869c3f05698-1.jpg"
+                alt="واتساب"
+                class="app-logo"
+              />
+            </a>
+            <a href="/whatsapp.html" class="app-name" title="عرض معلومات تطبيق واتساب" style="text-decoration: none; color: inherit;">واتساب</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/WhatsApp.apk"
+              data-app-name="واتساب"
+              data-app-id="whatsapp"
+            >تثبيت</button>
+          </div>
+
+          <!-- الصف الثاني (4 تطبيقات قريباً) -->
+          <!-- 5. تيك توك (TikTok) -->
+          <div class="app-card">
+            <a href="/tiktok.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق تيك توك">
+              <img
+                src="https://i.ibb.co/r2w0hdnY/d3543b479ee91c1d361520c66d224edc.jpg"
+                alt="تيك توك"
+                class="app-logo"
+              />
+            </a>
+            <a href="/tiktok.html" class="app-name" title="عرض معلومات تطبيق تيك توك" style="text-decoration: none; color: inherit;">تيك توك</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Tlitok.apk"
+              data-app-name="تيك توك"
+              data-app-id="tiktok"
+            >تثبيت</button>
+          </div>
+
+          <!-- 6. انستقرام (Instagram) -->
+          <div class="app-card">
+            <a href="/instagram.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق انستقرام">
+              <img
+                src="https://i.ibb.co/VWDzc5K5/2b64cdbcba51580b4992d1acbdd9974b.jpg"
+                alt="انستقرام"
+                class="app-logo"
+              />
+            </a>
+            <a href="/instagram.html" class="app-name" title="عرض معلومات تطبيق انستقرام" style="text-decoration: none; color: inherit;">انستقرام</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Instagram.apk"
+              data-app-name="انستقرام"
+              data-app-id="instagram"
+            >تثبيت</button>
+          </div>
+
+          <!-- 7. جيميل (Gmail) -->
+          <div class="app-card">
+            <a href="/gmail.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق جيميل">
+              <img
+                src="https://i.ibb.co/ymcHM64K/21137282b11f2f8237f2d7b97952a1d2.jpg"
+                alt="جيميل"
+                class="app-logo"
+              />
+            </a>
+            <a href="/gmail.html" class="app-name" title="عرض معلومات تطبيق جيميل" style="text-decoration: none; color: inherit;">جيميل</a>
+            <button
+              class="install-btn"
+              data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/gmail.apk"
+              data-app-name="جيميل"
+              data-app-id="gmail"
+            >تثبيت</button>
+          </div>
+
+          <!-- 8. الشعار الرابع -->
+          <div class="app-card">
+            <div class="app-icon-box">
+              <img
+                src="https://i.ibb.co/WQmg1Mp/1790365833142.png"
+                alt="قريباً"
+                class="app-logo"
+              />
+            </div>
+            <div class="app-name">قريباً</div>
+            <button class="install-btn disabled-btn">قريباً</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الصفحة الجديدة المنبثقة بالسحب للأسفل: شاشة ضبابية كاملة بحواف دائرية -->
+    <div id="new-expanded-page" class="new-expanded-page" aria-hidden="true">
+      <!-- الشريط العلوي الثابت في الصفحة الجديدة: القائمة الجانبية والبحث والشعار -->
+      <header class="home-top-bar expanded-top-bar">
+        <div class="top-nav-actions">
+          <button id="expanded-menu-btn" class="top-icon-btn" aria-label="فتح القائمة الجانبية" title="القائمة">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <button id="expanded-search-btn" class="top-icon-btn" aria-label="بحث عن تطبيق" title="بحث">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="brand-logo-wrapper" title="شعار العلامة التجارية">
+          <img
+            src="https://i.ibb.co/gLhVMMzR/file-0000000064d48210955fbef215fdb487.png"
+            alt="شعار العلامة التجارية"
+            class="brand-trademark-img"
+          />
+        </div>
+      </header>
+
+      <!-- شريط البحث السريع في الصفحة الجديدة -->
+      <div id="expanded-quick-search-bar" class="quick-search-bar">
+        <div class="search-input-inner">
+          <svg class="inner-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="expanded-search-input"
+            class="home-search-input"
+            placeholder="ابحث عن التطبيقات..."
+          />
+          <button id="expanded-close-search-btn" class="close-search-btn" aria-label="إغلاق البحث">×</button>
+        </div>
+      </div>
+
+      <!-- محتوى التطبيقات داخل الشاشة الضبابية الكاملة -->
+      <div class="expanded-apps-scroll">
+        <div class="apps-grid expanded-grid">
+            <!-- 1. متاجر علوش -->
+            <div class="app-card">
+              <a href="/app-info.html" class="app-icon-box" title="عرض معلومات التطبيق">
+                <img
+                  src="https://i.ibb.co/VcnPyP18/1787531207672.png"
+                  alt="Aloush Stores"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/app-info.html" class="app-name" title="عرض معلومات التطبيق" style="text-decoration: none; color: inherit;">Aloush St...</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/https/aloushstores.apk"
+                data-app-name="متاجر علوش"
+                data-app-id="aloush_stores"
+              >تثبيت</button>
+            </div>
+
+            <!-- 2. TOO ID -->
+            <div class="app-card">
+              <a href="/too-id.html" class="app-icon-box" title="عرض معلومات تطبيق TOO ID">
+                <img
+                  src="https://i.ibb.co/fz7WsBjK/1790363095663.png"
+                  alt="TOO ID"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/too-id.html" class="app-name" title="عرض معلومات تطبيق TOO ID" style="text-decoration: none; color: inherit;">TOO ID</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/too.id.apk"
+                data-app-name="TOO ID"
+                data-app-id="too_id"
+              >تثبيت</button>
+            </div>
+
+            <!-- 3. كروم Chrome -->
+            <div class="app-card">
+              <a href="/chrome.html" class="app-icon-box full-cover" title="عرض معلومات متصفح كروم Chrome">
+                <img
+                  src="https://i.ibb.co/whvrKcsg/ec1e93df87bb422791a8c303ed910821.jpg"
+                  alt="كروم Chrome"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/chrome.html" class="app-name" title="عرض معلومات متصفح كروم Chrome" style="text-decoration: none; color: inherit;">كروم Chrome</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Google-browser.apk"
+                data-app-name="كروم Chrome"
+                data-app-id="chrome"
+              >تثبيت</button>
+            </div>
+
+            <!-- 4. واتساب (WhatsApp) -->
+            <div class="app-card">
+              <a href="/whatsapp.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق واتساب">
+                <img
+                  src="https://i.ibb.co/d1RYMvh/6acfb110fe709e6e9f4c6869c3f05698-1.jpg"
+                  alt="واتساب"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/whatsapp.html" class="app-name" title="عرض معلومات تطبيق واتساب" style="text-decoration: none; color: inherit;">واتساب</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/WhatsApp.apk"
+                data-app-name="واتساب"
+                data-app-id="whatsapp"
+              >تثبيت</button>
+            </div>
+
+            <!-- 5. تيك توك (TikTok) -->
+            <div class="app-card">
+              <a href="/tiktok.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق تيك توك">
+                <img
+                  src="https://i.ibb.co/r2w0hdnY/d3543b479ee91c1d361520c66d224edc.jpg"
+                  alt="تيك توك"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/tiktok.html" class="app-name" title="عرض معلومات تطبيق تيك توك" style="text-decoration: none; color: inherit;">تيك توك</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Tlitok.apk"
+                data-app-name="تيك توك"
+                data-app-id="tiktok"
+              >تثبيت</button>
+            </div>
+
+            <!-- 6. انستقرام (Instagram) -->
+            <div class="app-card">
+              <a href="/instagram.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق انستقرام">
+                <img
+                  src="https://i.ibb.co/VWDzc5K5/2b64cdbcba51580b4992d1acbdd9974b.jpg"
+                  alt="انستقرام"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/instagram.html" class="app-name" title="عرض معلومات تطبيق انستقرام" style="text-decoration: none; color: inherit;">انستقرام</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/Instagram.apk"
+                data-app-name="انستقرام"
+                data-app-id="instagram"
+              >تثبيت</button>
+            </div>
+
+            <!-- 7. جيميل (Gmail) -->
+            <div class="app-card">
+              <a href="/gmail.html" class="app-icon-box full-cover" title="عرض معلومات تطبيق جيميل">
+                <img
+                  src="https://i.ibb.co/ymcHM64K/21137282b11f2f8237f2d7b97952a1d2.jpg"
+                  alt="جيميل"
+                  class="app-logo"
+                />
+              </a>
+              <a href="/gmail.html" class="app-name" title="عرض معلومات تطبيق جيميل" style="text-decoration: none; color: inherit;">جيميل</a>
+              <button
+                class="install-btn"
+                data-apk-url="https://github.com/t72973024-afk/APK-AI-21081/releases/download/Too/gmail.apk"
+                data-app-name="جيميل"
+                data-app-id="gmail"
+              >تثبيت</button>
+            </div>
+
+            <!-- 8. الشعار الرابع -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/WQmg1Mp/1790365833142.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 9. الشعار الأول مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/LdQy5jG1/1790366113942.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 10. الشعار الثاني مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/8nZL1JNV/1790366065817.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 11. الشعار الثالث مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/0pcG4tsF/1790365897306.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 12. الشعار الرابع مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/WQmg1Mp/1790365833142.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 13. الشعار الأول مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/LdQy5jG1/1790366113942.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 14. الشعار الثاني مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/8nZL1JNV/1790366065817.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 15. الشعار الثالث مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/0pcG4tsF/1790365897306.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+
+            <!-- 16. الشعار الرابع مكرر -->
+            <div class="app-card">
+              <div class="app-icon-box">
+                <img
+                  src="https://i.ibb.co/WQmg1Mp/1790365833142.png"
+                  alt="قريباً"
+                  class="app-logo"
+                />
+              </div>
+              <div class="app-name">قريباً</div>
+              <button class="install-btn disabled-btn">قريباً</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- خط السحب من الأسفل: عند السحب للأعلى ترجع تفتح الصفحة الرئيسية بسلاسة -->
+        <div class="expanded-bottom-handle-bar" id="close-expanded-bar" role="button" aria-label="اسحب للأعلى للرجوع للصفحة الرئيسية" title="اسحب للأعلى أو اضغط للرجوع للصفحة الرئيسية">
+          <div class="sheet-handle-pill"></div>
+        </div>
+      </div>
+
+    <!-- غطاء القائمة الجانبية -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- القائمة الجانبية (Sidebar Drawer) - دائرية من الأربع حواف -->
+    <aside id="side-drawer" class="side-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-brand-center">
+          <img
+            src="https://i.ibb.co/gLhVMMzR/file-0000000064d48210955fbef215fdb487.png"
+            alt="شعار العلامة التجارية"
+            class="drawer-logo"
+          />
+        </div>
+      </div>
+
+      <!-- عناصر القائمة الجانبية -->
+      <nav class="drawer-nav">
+        <a href="#account" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <span class="drawer-item-title">الحساب</span>
+        </a>
+
+        <a href="#apps" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            </svg>
+          </div>
+          <span class="drawer-item-title">قسم التطبيقات</span>
+        </a>
+
+        <a href="#web-apps" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span class="drawer-item-title">قسم تطبيقات الويب</span>
+        </a>
+
+        <a href="#games" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" y1="12" x2="10" y2="12"></line>
+              <line x1="8" y1="10" x2="8" y2="14"></line>
+              <line x1="15" y1="13" x2="15.01" y2="13"></line>
+              <line x1="18" y1="11" x2="18.01" y2="11"></line>
+              <rect x="2" y="6" width="20" height="12" rx="6"></rect>
+            </svg>
+          </div>
+          <span class="drawer-item-title">قسم الالعاب</span>
+        </a>
+
+        <a href="#stores" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </div>
+          <span class="drawer-item-title">قسم المتاجر</span>
+        </a>
+
+        <a href="#websites" class="drawer-item">
+          <div class="drawer-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <span class="drawer-item-title">قسم المواقع</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- إشعار التثبيت الداخلي بدون الخروج من التطبيق -->
+    <div id="install-toast" class="install-toast" role="alert" aria-live="polite">
+      <div class="toast-icon">📥</div>
+      <div class="toast-content">
+        <div class="toast-title" id="toast-title">جاري تثبيت متاجر علوش...</div>
+        <div class="toast-desc" id="toast-desc">يتم التنزيل والتثبيت داخل التطبيق تلقائياً</div>
+      </div>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
